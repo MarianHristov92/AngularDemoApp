@@ -1,30 +1,56 @@
 <!-- Default form register -->
-<form class="text-center border border-light p-5">
+<form class="text-center border border-light p-5" [formGroup]="form" (ngSubmit)="login($event)">
 
   <p class="h4 mb-4">Sign up</p>
 
   <div class="form-row mb-4">
     <div class="col">
       <!-- First name -->
-      <input type="text" id="defaultRegisterFormFirstName" class="form-control" placeholder="First name">
+      <input
+        type="text"
+        id="registerFormFirstName"
+        class="form-control"
+        placeholder="First name"
+        formControlName="firstName">
     </div>
     <div class="col">
       <!-- Last name -->
-      <input type="text" id="defaultRegisterFormLastName" class="form-control" placeholder="Last name">
+      <input
+        type="text"
+        id="registerFormLastName"
+        class="form-control"
+        placeholder="Last name"
+        formControlName="lastName">
     </div>
   </div>
 
   <!-- E-mail -->
-  <input type="email" id="defaultRegisterFormEmail" class="form-control mb-4" placeholder="E-mail">
+  <input
+    type="email"
+    id="registerFormEmail"
+    class="form-control mb-4"
+    placeholder="E-mail"
+    formControlName="email">
 
   <!-- Password -->
-  <input type="password" id="defaultRegisterFormPassword" class="form-control" placeholder="Password" aria-describedby="defaultRegisterFormPasswordHelpBlock">
+  <input
+    type="password"
+    id="defaultRegisterFormPassword"
+    class="form-control" placeholder="Password"
+    aria-describedby="defaultRegisterFormPasswordHelpBlock"
+    formControlName="password">
   <small id="defaultRegisterFormPasswordHelpBlock" class="form-text text-muted mb-4">
     At least 8 characters and 1 digit
   </small>
 
   <!-- Phone number -->
-  <input type="text" id="defaultRegisterPhonePassword" class="form-control" placeholder="Phone number" aria-describedby="defaultRegisterFormPhoneHelpBlock">
+  <input
+    type="text"
+    id="defaultRegisterPhonePassword"
+    class="form-control"
+    placeholder="Phone number"
+    aria-describedby="defaultRegisterFormPhoneHelpBlock"
+    formControlName="phoneNumber">
   <small id="defaultRegisterFormPhoneHelpBlock" class="form-text text-muted mb-4">
     Optional - for two-step authentication
   </small>
@@ -37,7 +63,7 @@
   </div>
 
   <!-- Sign up button -->
-  <button mdbBtn color="info" block="true" class="my-4" type="submit">Sign in</button>
+  <button color="primary" block="true" class="btn btn-primary my-4 btn-block" type="submit">Sign in</button>
 
   <!-- Social register -->
   <p>or sign up with:</p>
