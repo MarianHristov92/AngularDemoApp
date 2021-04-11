@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {HomePageFeatureItemModel} from '../home-page-feature-list/models/home-page-feature-item-model/home-page-feature-item';
+import {HomePageFeatureItemModel} from './models/home-page-feature-item-model/home-page-feature-item';
 
 @Component({
   selector: 'app-home-page-feature-list',
