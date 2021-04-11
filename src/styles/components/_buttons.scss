@@ -1,0 +1,33 @@
+
+/*=====================================
+ GHOST BUTTON EXTENSION HOVER
+    ===================================*/
+.ghost-button-size-transition {
+  display: inline-block;
+  margin: 20px;
+  width: 250px;
+  height: 45px;
+  line-height: 25px;
+  padding: 8px;
+  color: #fff;
+  font-size: 150%;
+  border: 2px solid #fff;
+  text-align: center;
+  outline: none;
+  text-decoration: none;
+  transition: width 0.3s ease-out,
+  height 0.3s ease-out,
+  line-height 0.3s ease-out;
+}
+.ghost-button-size-transition:hover,
+.ghost-button-size-transition:active {
+  width: 270px;
+  height: 55px;
+  color: #fff;
+  font-size: 150%;
+  text-decoration: none;
+  line-height: 45px;
+  transition: width 0.1s ease-in,
+  height 0.1s ease-in,
+  line-height 0.1s ease-in;
+}

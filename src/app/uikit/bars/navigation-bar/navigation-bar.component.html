@@ -1,0 +1,32 @@
+<!-- NAVBAR -->
+<nav class="navbar fixed-top navbar-expand-lg navbar-light primary-color">
+  <!-- CONTAINER WRAPPER -->
+  <div class="container-fluid">
+
+    <!-- LOGO BRAND HOME -->
+    <div class="navbar-nav">
+      <a class="navbar-brand" [routerLink]="[data.logo.link]">
+        <img
+          src="{{data.logo.icon}}"
+          height="40"
+          alt=""
+          loading="lazy"
+        />
+        {{data.logo.text}}
+      </a>
+    </div>
+
+    <!-- LEFT VIEW -->
+    <app-navigation-bar-view [data]="data.leftView"></app-navigation-bar-view>
+
+    <!-- MIDDLE VIEW -->
+<!--    <app-navigation-bar-view [data]="data.middleView"></app-navigation-bar-view>-->
+    <app-search-bar></app-search-bar>
+
+    <!-- MIDDLE VIEW -->
+    <app-navigation-bar-view [data]="data.rightView"></app-navigation-bar-view>
+
+  </div>
+  <!-- Container wrapper -->
+</nav>
+<!-- Navbar -->

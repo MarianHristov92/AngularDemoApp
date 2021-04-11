@@ -1,0 +1,14 @@
+<div id="features-sec" class="container set-pad" >
+
+  <!-- HEADER CAPTION -->
+  <div class="row d-flex justify-content-center">
+    <h1 data-scroll-reveal="enter from the bottom after 0.2s"  class="header-line text-center">FEATURE LIST </h1>
+  </div>
+  <!--/. HEADER CAPTION END-->
+
+  <!-- FEATURE LIST -->
+  <div *ngFor="let homePageFeatureItemModel of homePageFeatureItems;">
+    <app-home-page-feature-list-item [data]="homePageFeatureItemModel"></app-home-page-feature-list-item>
+  </div>
+  <!--/. FEATURE LIST -->
+</div>

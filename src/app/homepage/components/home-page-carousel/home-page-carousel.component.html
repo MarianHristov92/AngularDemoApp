@@ -1,0 +1,7 @@
+<mdb-carousel class="homepage-carousel slide" [animation]="'slide'">
+  <ng-container *ngFor="let carouselItem of carouselItems;">
+      <mdb-carousel-item>
+        <app-home-page-carousel-item [data]="carouselItem"></app-home-page-carousel-item>
+      </mdb-carousel-item>
+  </ng-container>
+</mdb-carousel>

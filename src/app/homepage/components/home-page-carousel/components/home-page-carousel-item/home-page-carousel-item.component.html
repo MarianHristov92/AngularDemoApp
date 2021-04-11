@@ -1,0 +1,28 @@
+<div *ngIf="carouselItem">
+  <!--  Background View-->
+  <div class="homepage-carousel-item">
+    <img
+      src="../assets/homepage/img/homepage-background.jpg"
+      class="d-block w-100"
+      alt="..."/>
+
+    <div
+      class="mask rgba-indigo-light waves-light"
+      mdbWavesEffect></div>
+  </div>
+
+  <!--  Elements View-->
+  <div class="carousel-caption">
+    <div class="animated fadeInDown">
+      <h3>{{carouselItem.title}}</h3>
+      <h1>{{carouselItem.subtitle}}</h1>
+      <div class="row d-flex justify-content-center flex-wrap">
+        <div *ngFor="let section of carouselItem.buttonSubsections;">
+          <a  class="ghost-button-size-transition" >
+            {{section.title}}
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

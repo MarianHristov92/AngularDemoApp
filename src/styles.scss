@@ -1,0 +1,43 @@
+@charset "utf-8";
+@import 'styles/abstracts/variables';
+@import 'styles/abstracts/functions';
+@import 'styles/abstracts/mixins';
+@import 'styles/abstracts/placeholders';
+
+@import 'styles/base/base';
+@import 'styles/base/reset';
+@import 'styles/base/typography';
+
+@import 'styles/layout/navigation';
+@import 'styles/layout/grid';
+@import 'styles/layout/header';
+@import 'styles/layout/footer';
+@import 'styles/layout/sidebar';
+@import 'styles/layout/forms';
+
+@import 'styles/components/buttons';
+@import 'styles/components/carousel';
+@import 'styles/components/cover';
+@import 'styles/components/dropdown';
+@import 'styles/components/media';
+@import 'styles/components/thumbnails';
+
+@import 'styles/pages/homepage';
+@import 'styles/pages/contact';
+
+@import 'styles/themes/theme';
+@import 'styles/themes/admin';
+
+/*=====================================
+  FOR OVERRIDING ELEMENTS FROM EXTERNAL LIBRARIES. CREATE A SPECIFIC FILE FOR EVERY PARTICULAR LIBRARY
+    ===================================*/
+@import 'styles/vendors/bootstrap';
+@import 'styles/vendors/jquery-ui';
+
+/*=====================================
+  //TODO: FIX HIERARCHY FOR EXTERNAL LIBRARIES
+    ===================================*/
+@import '../node_modules/angular-bootstrap-md/assets/scss/mdb';
+@import '../node_modules/angular-bootstrap-md/assets/scss/bootstrap/bootstrap';
+@import '../node_modules/animate.css/animate.css';
+
