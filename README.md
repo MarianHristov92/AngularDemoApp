@@ -1,5 +1,7 @@
 # AngularDemoApp
 
+Angular demo app is a sample app for starting a new project. 
+Based on the SASS requirements it's implemented a 7-1 Design for SCSS and standard Angular Routing and build schematics.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 11.2.8.
 
 ## Development server
